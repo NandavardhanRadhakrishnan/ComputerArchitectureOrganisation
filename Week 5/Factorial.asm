@@ -1,5 +1,6 @@
 data segment
     a dw 04H
+    c dw ?
 data ends
 
 code segment
@@ -13,5 +14,6 @@ code segment
    up:
    mul cx
    loop up
+   mov c,ax
   code ends
 end start
