@@ -8,12 +8,11 @@ code segment
    start:
    mov ax,data
    mov ds,ax
-   
    mov ax,01H
    mov cx,a
    up:
    mul cx
    loop up
    mov c,ax
-  code ends
+code ends
 end start
